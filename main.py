@@ -130,7 +130,7 @@ def move_box(character, move):
     )
 
     thumbnail_id = id_char_lookup.get(character, None)
-    embed.set_thumbnail(url=f"https://virtua-fighter.com/revo/en/character/images/chara{thumbnail_id}.png")
+    embed.set_thumbnail(url=f"https://raw.githubusercontent.com/noahbchang/vf-discord-fd-bot/main/assets/char_portraits/char{thumbnail_id}.png")
     embed.add_field(name="Level", value=f"{move['level']}", inline = True)
     embed.add_field(name="Damage", value=f"{move['damage']}", inline = True)
     embed.add_field(name="Startup", value=f"{move['startup']}", inline = True)
